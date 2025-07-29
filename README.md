@@ -1,57 +1,46 @@
-# General Repository Template
+# ACCESS-NRI 2025 -- CMWG Workshop
+September 12, 2025
 
-A general template repository for default settings when creating new repositories.
+**Welcome to the ACCESS-NRI Cryosphere Modelling Working Group (CMWG) 2025 Science Day!**
 
-This repository uses the Apache-2.0 license. `COPYRIGHT.txt` contains a current copyright statement which should be included at the top of all files.
+This session provides an introduction to ISSM and, specifically, [pyISSM](https://github.com/ACCESS-NRI/pyISSM), the Python API for [ISSM](https://github.com/ISSMteam/ISSM) under development by ACCESS-NRI. This is intended to be an interactive session. There are a few necessary steps to get up-and-running, detailed below.
 
-When creating a new repository you [can use this repository as a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template), to automate the creation of the correct license and COPYRIGHT statement.
+# 1. Activate an ARE JupyterLab Session
 
-## COPYRIGHT Header
+The Australian Research Environment (ARE) is a web-based graphical interface for performing computational research on National Computational Infrastructure (NCI) *Gadi* supercomputer. It allows users to interactively run Python
 
-Best practice suggests adding a copyright statement at the top of every source code file, or text file where it is possible to add a copyright statement without interfering with the purpose of the file. The reasoning is if a file is separated from the repository in which it resides then it may not be possible to ascertain it's licensing, which may hamper re-use.
+> ⚠️ **NCI account & project access:** To use ARE, you must have an NCI account and be a member of a project with available computing resources.
+>For this workshop, you will require access to NCI project `nf33` and `xp65`. If you have not requested to join these projects, you can do so by logging into your [NCI account](https://my.nci.org.au/).
 
-Making this as short and concise as possible reduces the overhead in including such a copyright statement. To that end using [SPDX identifiers](https://spdx.dev/ids/) is simple, efficient, portable and machine-readable.
+To start an ARE JupyterLab session, go to the [ARE JupyterLab](https://are.nci.org.au/pun/sys/dashboard/batch_connect/sys/jupyter/ncigadi/session_contexts/new) page and follow these steps:
 
-### Examples
+1. Log in with your NCI username and password.
+2. Configure the following PBS directives:
+    - Walltime (hours): `3`
+    - Queue: `normalbw`
+    - Compute Size: `small`
+    - Project: `au88`
+    - Storage: `gdata/nf33`
+3. Click `Launch` to launch the ARE JupyterLab session.
 
-An example, short, copyright statement is reproduced below, as it might appear in different coding languages. Copy and add to files as appropriate: 
+One the ARE session is active, it will appear in the `My Interactive Sessions` section of your ARE dashboard. Simply click `Open JupyterLab` to access the session.
 
-#### plaintext
-It is common to include copyright statements at the bottom of a text document or website page
+Further detailed instructions on launching an ARE JupyterLab session can be found on the [ACCESS-Hive Docs](https://docs.access-hive.org.au/getting_started/are/).
+
+# 2. In JupyterLab
+
+Once in JupyterLab, navigate to the workshop directory here: `/g/data/nf33/access-nri/CMWG_workshop_2025/`. Here, you'll find two directories:
+
+1. `notebooks/` - This directory contains the following Jupyter Notebooks that form the basis of this workshop:
+    - `01_pyISSM_intro.ipynb`: XXX
+    - `02_pyISSM_vis1.ipynb`: XXX
+    - `03_pyISSM_vis2.ipynb`: XXX
+    - `04_pyISSM_grid.ipynb`: XXX
+2. `sample_models/` - This directory contains two example ISSM models. The default options in the notebooks are designed to interact with a model of Antarctica (`zrun_yearly_aSMB_HadGEM2_ctrl_2300_again.nc`). We also provide a second model, of Greenland (`Greenland.HistoricTransient_200yr.nc`) for those of you who would like to explore a different ice sheet!
+
+> ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `sample_models/`. They are provided for use within this workshop only.
+
 ```text
 © 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details. 
 SPDX-License-Identifier: Apache-2.0
 ```
-
-#### python
-For code it is more common to include the copyright in a comment at the top
-```python
-# Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
-# SPDX-License-Identifier: Apache-2.0
-```
-
-#### shell
-```bash
-# Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
-# SPDX-License-Identifier: Apache-2.0
-```
-
-##### FORTRAN
-```fortran
-! Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
-! SPDX-License-Identifier: Apache-2.0
-```
-
-#### C/C++ 
-```c
-// Copyright 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details.
-// SPDX-License-Identifier: Apache-2.0
-```
-
-### Notes
-
-Note that the date is the first time the project is created. 
-
-The date signifies the year from which the copyright notice applies. **NEVER** replace with a later year, only ever add later years or a year range. 
-
-It is not necessary to include subsequent years in the copyright statement at all unless updates have been made at a later time, and even then it is largely discretionary: they are not necessary as copyright is contingent on the lifespan of copyright holder +50 years as per the [Berne Convention](https://en.wikipedia.org/wiki/Berne_Convention).
