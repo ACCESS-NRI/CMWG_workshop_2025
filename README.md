@@ -16,10 +16,10 @@ To start an ARE JupyterLab session, go to the [ARE JupyterLab](https://are.nci.o
 
 1. Log in with your NCI username and password.
 2. Configure the following PBS directives:
-    - Walltime (hours): `3`
+    - Walltime (hours): `4`
     - Queue: `normalbw`
-    - Compute Size: `small`
-    - Project: `au88`
+    - Compute Size: `medium`
+    - Project: `nf33`
     - Storage: `gdata/nf33`
 3. Click `Launch` to launch the ARE JupyterLab session.
 
@@ -32,10 +32,10 @@ Further detailed instructions on launching an ARE JupyterLab session can be foun
 Once in JupyterLab, navigate to the workshop directory here: `/g/data/nf33/access-nri/CMWG_workshop_2025/`. Here, you'll find two directories:
 
 1. `notebooks/` - This directory contains the following Jupyter Notebooks that form the basis of this workshop:
-    - `01_pyISSM_intro.ipynb`: XXX
-    - `02_pyISSM_vis1.ipynb`: XXX
-    - `03_pyISSM_vis2.ipynb`: XXX
-    - `04_pyISSM_grid.ipynb`: XXX
+    - `01_pyISSM_intro.ipynb`: Initial overview of the ISSM model class and sub-classes.
+    - `02_pyISSM_vis1.ipynb`: Visualisation of the ISSM model mesh and element/node types.
+    - `03_pyISSM_vis2.ipynb`: Visualisation of ISSM model fields and results.
+    - `04_pyISSM_grid.ipynb`: Gridding and exporting ISSM models.
 2. `sample_models/` - This directory contains two example ISSM models. The default options in the notebooks are designed to interact with a model of Antarctica (`zrun_yearly_aSMB_HadGEM2_ctrl_2300_again.nc`). We also provide a second model, of Greenland (`Greenland.HistoricTransient_200yr.nc`) for those of you who would like to explore a different ice sheet!
 
 > ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `sample_models/`. They are provided for use within this workshop only.
