@@ -23,22 +23,37 @@ To start an ARE JupyterLab session, go to the [ARE JupyterLab](https://are.nci.o
     - Storage: `gdata/nf33`
 3. Click `Launch` to launch the ARE JupyterLab session.
 
-One the ARE session is active, it will appear in the `My Interactive Sessions` section of your ARE dashboard. Simply click `Open JupyterLab` to access the session.
+Once the ARE session is active, it will appear in the `My Interactive Sessions` section of your ARE dashboard. Simply click `Open JupyterLab` to access the session.
 
 Further detailed instructions on launching an ARE JupyterLab session can be found on the [ACCESS-Hive Docs](https://docs.access-hive.org.au/getting_started/are/).
 
-# 2. In JupyterLab
+# 2. `git clone` Workshop notebooks
 
-Once in JupyterLab, navigate to the workshop directory here: `/g/data/nf33/access-nri/CMWG_workshop_2025/`. Here, you'll find two directories:
+To access the resources required for this workshop, you need to `git clone` this repository to a directory on Gadi. To do this, follow these steps:
+
+1. Open a new terminal window in your JupyterLab session. To do this, click on the `+` in the tab ribbon and select "Terminal".
+2. Navigate to a location on Gadi where you have write permission and wish to save these resources. **We recommend simply placing them in your home directory.** You can get here by running `cd ~` in the terminal.
+3. Run the following command to create a new directory called "CMWG_workshop_2025" in your current directory:
+   
+       git clone https://github.com/ACCESS-NRI/CMWG_workshop_2025.git
+   
+    > ⚠️ **Github Username and Password:** Depending on if/how you have configured git on Gadi, you may be prompted to enter your Github Username and Password in order for this process to complete. Note that if you use a "Personal Access Token (PAT)" with Github, the Password you enter here should be your PAT.
+
+4. Confirm that these workshop resources are now available in the following directory: `./CMWG_workshop_2025/`
+
+# 3. In JupyterLab
+
+Using the File Browser on the left of your JupyterLab window, navigate to the `CMWG_workshop_2025` directory that you just cloned. Here, you will find one sub-directory:
 
 1. `notebooks/` - This directory contains the following Jupyter Notebooks that form the basis of this workshop:
     - `01_pyISSM_intro.ipynb`: Initial overview of the ISSM model class and sub-classes.
     - `02_pyISSM_vis1.ipynb`: Visualisation of the ISSM model mesh and element/node types.
     - `03_pyISSM_vis2.ipynb`: Visualisation of ISSM model fields and results.
     - `04_pyISSM_grid.ipynb`: Gridding and exporting ISSM models.
-2. `sample_models/` - This directory contains two example ISSM models. The default options in the notebooks are designed to interact with a model of Antarctica (`zrun_yearly_aSMB_HadGEM2_ctrl_2300_again.nc`). We also provide a second model, of Greenland (`Greenland.HistoricTransient_200yr.nc`) for those of you who would like to explore a different ice sheet!
+  
+Access to another directory (`/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`) is required to access two example ISSM models. Access to this directory should be granted by joining the `nf33` project and by specifying the `gdata/nf33` storage location when activating the ARE JupyterLab Session (Step 1 above). The default options in the workshop notebooks are designed to interact with a model of Antarctica (`zrun_yearly_aSMB_HadGEM2_ctrl_2300_again.nc`). We also provide a second model, of Greenland (`Greenland.HistoricTransient_200yr.nc`) for those of you who would like to explore a different ice sheet!
 
-> ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `sample_models/`. They are provided for use within this workshop only.
+> ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`. They are provided for use within this workshop only. Direct access to this directory is not necessary -- models are loaded via the workshop notebooks.
 
 ```text
 © 2022 ACCESS-NRI and contributors. See the top-level COPYRIGHT file for details. 
