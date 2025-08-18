@@ -39,7 +39,7 @@ To access the resources required for this workshop, you need to `git clone` this
    
     > ⚠️ **Github Username and Password:** Depending on if/how you have configured git on Gadi, you may be prompted to enter your Github Username and Password in order for this process to complete. Note that if you use a "Personal Access Token (PAT)" with Github, the Password you enter here should be your PAT.
 
-4. Confirm that these workshop resources are now available in the following directory: `./CMWG_workshop_2025/`
+4. Confirm that these workshop resources are now available in the following directory: `~/CMWG_workshop_2025/`
 
 # 3. In JupyterLab
 
@@ -51,7 +51,7 @@ Using the File Browser on the left of your JupyterLab window, navigate to the `C
     - `03_pyISSM_vis2.ipynb`: Visualisation of ISSM model fields and results.
     - `04_pyISSM_grid.ipynb`: Gridding and exporting ISSM models.
   
-Access to another directory (`/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`) is required to access two example ISSM models. Access to this directory should be granted by joining the `nf33` project and by specifying the `gdata/nf33` storage location when activating the ARE JupyterLab Session (Step 1 above). The default options in the workshop notebooks are designed to interact with a model of Antarctica (`zrun_yearly_aSMB_HadGEM2_ctrl_2300_again.nc`). We also provide a second model, of Greenland (`Greenland.HistoricTransient_200yr.nc`) for those of you who would like to explore a different ice sheet!
+Access to another directory (`/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`) is required to access two example ISSM models. Access to this directory should be granted by joining the `nf33` project and by specifying the `gdata/nf33` storage location when activating the ARE JupyterLab Session (Step 1 above). The default options in the workshop notebooks are designed to interact with a model of Antarctica (`antarctica_sample_model.nc`). We also provide a second model, of Greenland (`greenland_sample_model.nc`) for those of you who would like to explore a different ice sheet!
 
 > ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`. They are provided for use within this workshop only. Direct access to this directory is not necessary -- models are loaded via the workshop notebooks.
 
