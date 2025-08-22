@@ -21,7 +21,10 @@ To start an ARE JupyterLab session, go to the [ARE JupyterLab](https://are.nci.o
     - Compute Size: `medium`
     - Project: `nf33`
     - Storage: `gdata/nf33`
-3. Click `Launch` to launch the ARE JupyterLab session.
+3. Click "Show advanced settings" and populate the following fields:
+   - Module directories: `/g/data/xp65/public/modules`
+   - Modules: `conda/analysis3 openmpi`
+5. Click `Launch` to launch the ARE JupyterLab session.
 
 Once the ARE session is active, it will appear in the `My Interactive Sessions` section of your ARE dashboard. Simply click `Open JupyterLab` to access the session.
 
@@ -50,8 +53,9 @@ Using the File Browser on the left of your JupyterLab window, navigate to the `C
     - `02_pyISSM_vis1.ipynb`: Visualisation of the ISSM model mesh and element/node types.
     - `03_pyISSM_vis2.ipynb`: Visualisation of ISSM model fields and results.
     - `04_pyISSM_grid.ipynb`: Gridding and exporting ISSM models.
+    - `05_cryoDatastore_example.ipynb`: A bonus notebook that provides an example usage of the Cryosphere Datapool!
   
-Access to another directory (`/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`) is required to access two example ISSM models. Access to this directory should be granted by joining the `nf33` project and by specifying the `gdata/nf33` storage location when activating the ARE JupyterLab Session (Step 1 above). The default options in the workshop notebooks are designed to interact with a model of Antarctica (`antarctica_sample_model.nc`). We also provide a second model, of Greenland (`greenland_sample_model.nc`) for those of you who would like to explore a different ice sheet!
+Access to another directory (`/g/data/nf33/access-nri/CMWG_workshop_2025/`) is required to access two example ISSM models (and the Cryosphere datapool). Access to this directory should be granted by joining the `nf33` project and by specifying the `gdata/nf33` storage location when activating the ARE JupyterLab Session (Step 1 above). The default options in the workshop notebooks are designed to interact with a model of Antarctica (`antarctica_sample_model.nc`). We also provide a second model, of Greenland (`greenland_sample_model.nc`) for those of you who would like to explore a different ice sheet!
 
 > ⚠️ **Data Sharing:** Please do not copy or share the ISSM models provided in `/g/data/nf33/access-nri/CMWG_workshop_2025/sample_models/`. They are provided for use within this workshop only. Direct access to this directory is not necessary -- models are loaded via the workshop notebooks.
 
