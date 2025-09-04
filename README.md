@@ -20,10 +20,10 @@ To start an ARE JupyterLab session, go to the [ARE JupyterLab](https://are.nci.o
     - Queue: `normalbw`
     - Compute Size: `medium`
     - Project: `nf33`
-    - Storage: `gdata/nf33`
+    - Storage: `gdata/nf33+gdata/xp65`
 3. Click "Show advanced settings" and populate the following fields:
    - Module directories: `/g/data/xp65/public/modules`
-   - Modules: `conda/analysis3 openmpi`
+   - Modules: `conda/analysis3`
 5. Click `Launch` to launch the ARE JupyterLab session.
 
 Once the ARE session is active, it will appear in the `My Interactive Sessions` section of your ARE dashboard. Simply click `Open JupyterLab` to access the session.
