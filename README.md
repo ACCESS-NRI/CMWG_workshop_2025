@@ -11,7 +11,7 @@ This session provides an introduction to ISSM and, specifically, [pyISSM](https:
 
 - **NCI Account** - This workshop has been designed to operatre on the Australian Research Environment (ARE), a web-based graphical interface for performing computational research on the National Computational Infrastructure (NCI) *Gadi* supercomputer. In order to access ARE, you will require an NCI account. If you do not have an NCI account, you can sign up [here](https://my.nci.org.au/mancini/signup/0).
 
-- **NCI Project Membership** - To run the exercises you will require access to two specific projects on *Gadi*:
+- **NCI Project Membership** - To run the tutorials you will require access to two specific projects on *Gadi*:
     - [`nf33` - ACCESS-NRI Training](https://my.nci.org.au/mancini/project/nf33) - This project hosts sample ISSM model files used throughout this workshop.
     - [`xp65` - ACCESS Analysis Environments](https://my.nci.org.au/mancini/project/xp65) - This project hosts the shared `analysis3` conda environment that contains all the Python packages used throughout the workshop.
  
@@ -24,7 +24,7 @@ The Australian Research Environment (ARE) is a web-based graphical interface for
 > ⚠️ **NCI account & project access:** To use ARE, you must have an NCI account and be a member of a project with available computing resources.
 >For this workshop, you will require access to NCI projects `nf33` and `xp65`. If you have not requested to join these projects, you can do so by logging into your [NCI account](https://my.nci.org.au/) (See Step 0 above).
 
-Detailed instructions on how to start an ARE JupyterLab session for this workshop are included [here](LINKTOWALKTHROUGH) and summarised below:
+Detailed instructions on how to start an ARE JupyterLab session for this workshop are included [here](https://github.com/ACCESS-NRI/CMWG_workshop_2025/blob/lb-draft-notebooks/docs/ARE_JupyterLab_setup_guide.md) and summarised below:
 
 1. Navigate to the [ARE Dashboard](https://are.nci.org.au/pun/sys/dashboard) and Login with your NCI username and password.
 2. Select **JupyterLab** from the "Featured Apps" list
