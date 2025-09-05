@@ -3,13 +3,13 @@ September 12, 2025
 
 **Welcome to the ACCESS-NRI Cryosphere Modelling Working Group (CMWG) 2025 Science Day!**
 
-This session provides an introduction to ISSM and, specifically, [pyISSM](https://github.com/ACCESS-NRI/pyISSM), the Python API for [ISSM](https://github.com/ISSMteam/ISSM) under development by ACCESS-NRI. This is intended to be an interactive session for users to work through a series of tutorials at their own pace. There are a few necessary steps to get up-and-running, detailed below.
+This session provides an introduction to ISSM and, specifically, [pyISSM](https://github.com/ACCESS-NRI/pyISSM), the Python API for [ISSM](https://github.com/ISSMteam/ISSM) under active development by ACCESS-NRI. This is intended to be an interactive session for users to work through a series of tutorials at their own pace. There are a few necessary steps to get up-and-running, detailed below.
 
 # 0. Pre-workshop preparation
 
-❗*To get the most from the workshop, please complete these "pre-workshop preparation" steps before the workshop*❗
+❗*To get the most from the workshop, please complete these "pre-workshop preparation" steps before the session*❗
 
-- **NCI Account** - This workshop has been designed to operatre on the Australian Research Environment (ARE), a web-based graphical interface for performing computational research on the National Computational Infrastructure (NCI) *Gadi* supercomputer. In order to access ARE, you will require an NCI account. If you do not have an NCI account, you can sign up [here](https://my.nci.org.au/mancini/signup/0).
+- **NCI Account** - This workshop has been designed to operate on the Australian Research Environment (ARE), a web-based graphical interface for performing computational research on the National Computational Infrastructure (NCI) *Gadi* supercomputer. In order to access ARE, you will require an NCI account. If you do not have an NCI account, you can sign up [here](https://my.nci.org.au/mancini/signup/0).
 
 - **NCI Project Membership** - To run the tutorials you will require access to two specific projects on *Gadi*:
     - [`nf33` - ACCESS-NRI Training](https://my.nci.org.au/mancini/project/nf33) - This project hosts sample ISSM model files used throughout this workshop.
@@ -19,9 +19,9 @@ This session provides an introduction to ISSM and, specifically, [pyISSM](https:
 
 # 1. Activate an ARE JupyterLab Session
 
-The Australian Research Environment (ARE) is a web-based graphical interface for performing computational research on National Computational Infrastructure (NCI) *Gadi* supercomputer. It allows users to run JupyerLab, an interactive development environment for notebooks, code, and data. We will use JupyterLab to run a series of tutorials developed using notebooks.
+The Australian Research Environment (ARE) allows users to run JupyerLab, an interactive development environment for notebooks, code, and data. We will use JupyterLab to run a series of tutorials developed using notebooks.
 
-> ⚠️ **NCI account & project access:** To use ARE, you must have an NCI account and be a member of a project with available computing resources.
+> ⚠️ **Reminder: NCI account & project access:** To use ARE, you must have an NCI account and be a member of a project with available computing resources.
 >For this workshop, you will require access to NCI projects `nf33` and `xp65`. If you have not requested to join these projects, you can do so by logging into your [NCI account](https://my.nci.org.au/) (See Step 0 above).
 
 Detailed instructions on how to start an ARE JupyterLab session for this workshop are included [here](https://github.com/ACCESS-NRI/CMWG_workshop_2025/blob/lb-draft-notebooks/docs/ARE_JupyterLab_setup_guide.md) and summarised below:
