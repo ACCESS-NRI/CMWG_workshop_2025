@@ -39,7 +39,7 @@ Click on `JupyterLab` under *Featured Apps* to configure a new JupyterLab instan
 ## 3. Configure JupyterLab session
 You will now be presented with the main JupyterLab instance configuration form. Please complete **only** the fields below - leave all other fields blank or to their default values.
 
-- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. For the hackathon, please insert a walltime of `4` hours.
+- *3.1* **Walltime**: The number of hours the JupyterLab instance will run. For the workshop session, please insert a walltime of `4` hours.
 
 <p align="center"><img src="assets_ARE/walltime.png" alt="drawing" width="60%"/></p>
 
@@ -51,7 +51,7 @@ You will now be presented with the main JupyterLab instance configuration form. 
 
 <p align="center"><img src="assets_ARE/project.png" alt="drawing" width="60%"/></p>
 
-- *3.4* **Storage**: This is the list of project data storage locations required to complete the hackathon exercises. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please copy and paste the following string in its entirety into the storage input field:
+- *3.4* **Storage**: This is the list of project data storage locations required to complete the pyISSM session exercises. In ARE, storage locations need to be explicitly defined to access these data from within a JupyterLab instance. Please copy and paste the following string in its entirety into the storage input field:
 ```
 gdata/nf33+gdata/xp65
 ```
